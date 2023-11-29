@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding='16dp'>
+
+        <TextView
+            android:id="@+id/record_data"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="0dp"
+            android:text="Name"
+            android:fontFamily="@font/strawberry_font"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/record_calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/record_data"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/strawberry_font"
+            android:layout_marginTop="10dp"
+            android:text="Calorie"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btAddRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:text="Add"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

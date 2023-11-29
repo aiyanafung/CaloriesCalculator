@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foodCollector.FoodCollectorActivity"
+    android:id="@+id/foodCollectorPage">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodCollectorRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/emoji"
+        android:background="@drawable/ripple_effect_round"
+        android:fontFamily="@font/cheri_font"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalCalorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:text="Total Calories: 0"
+        android:textSize="15sp"
+        android:fontFamily="@font/strawberry_font"
+        app:layout_constraintTop_toBottomOf="@+id/foodCollectorRecyclerView" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/strawberry_font"
+        android:text="Calories Burned: 0"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalCalorie" />
+
+    <TextView
+        android:id="@+id/calorieBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/strawberry_font"
+        android:textSize="15sp"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:text="Calorie balance: "
+        app:layout_constraintTop_toBottomOf="@+id/steps" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

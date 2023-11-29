@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search.addingFragments.IngredientFragment">
+
+
+    <EditText
+        android:id="@+id/editTextRecipeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:ems="10"
+        android:hint="Recipe Name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="#A3A0A0"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRecipeName"
+        app:layout_constraintStart_toEndOf="@+id/textViewRecipeName"
+        app:layout_constraintTop_toTopOf="@+id/textViewRecipeName" />
+
+    <TextView
+        android:id="@+id/textViewRecipeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Name:"
+        android:textColor="#191515"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCaloriesAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        android:text="Calories Amount:"
+        android:textColor="#0B0A0A"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecipeName" />
+
+    <EditText
+        android:id="@+id/editTextCaloriesAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:hint="@string/kcal_number"
+        android:inputType="text"
+        android:minHeight="30dp"
+        android:textColor="#988F8F"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCaloriesAmount"
+        app:layout_constraintStart_toEndOf="@+id/textViewCaloriesAmount"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaloriesAmount"
+        app:layout_constraintTop_toTopOf="@+id/textViewCaloriesAmount" />
+
+    <TextView
+        android:id="@+id/unit_kcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="kcal /per serve"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/editTextCaloriesAmount"
+        app:layout_constraintTop_toTopOf="@+id/textViewCaloriesAmount" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaloriesAmount"
+
+        >
+
+        <Button
+            android:id="@+id/btn_add_recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="back"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:layout_constraintStart_toEndOf="@+id/btn_add_recipe" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

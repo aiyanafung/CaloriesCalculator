@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7"
+        tools:context=".navigation.FragmentFriends">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:background="@drawable/wave_background"
+            android:padding="12dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:fontFamily="@font/hanging"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                />
+
+        </LinearLayout>
+
+        <!--Creating the menu grid button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:weightSum="2"
+            android:padding="16dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:padding="16dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="12dp"
+                    android:background="#fff"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/searchFriendsButton_main"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:background="@drawable/ic_baseline_search_24"
+                            android:backgroundTint="#86D7E1"
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Search your friend"
+                            android:textAlignment="center"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="12dp"
+                    android:background="#fff"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageButton
+                            android:id="@+id/friendCollectorBtn"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:background="@drawable/ic_baseline_person_24"
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Friends Collector"
+                            android:textAlignment="center"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

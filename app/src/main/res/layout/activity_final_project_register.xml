@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finalProjLoginNRegister.FinalProjectRegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="CREATE ACCOUNT"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/strawberry_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_create_account" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Enter your user name"
+        android:minHeight="48dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_weight"
+        app:layout_constraintStart_toEndOf="@+id/textView_weight"
+        app:layout_constraintTop_toTopOf="@+id/textView_weight" />
+
+
+    <TextView
+        android:id="@+id/textView_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Your weight :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/kg_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/roboto_font"
+        android:text="in kg"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight"
+        app:layout_constraintStart_toEndOf="@id/weight"
+        app:layout_constraintTop_toTopOf="@+id/textView_weight" />
+
+    <TextView
+        android:id="@+id/textView_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Your height :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_weight" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_height"
+        app:layout_constraintStart_toEndOf="@+id/textView_height"
+        app:layout_constraintTop_toTopOf="@+id/textView_height" />
+
+    <TextView
+        android:id="@+id/cm_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="in cm"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/height"
+        app:layout_constraintStart_toEndOf="@id/height"
+        app:layout_constraintTop_toTopOf="@+id/textView_height" />
+
+    <TextView
+        android:id="@+id/tv_select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_font"
+        android:gravity="left"
+        android:text="Select Date:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_height" />
+
+
+    <Button
+        android:id="@+id/btn_select_birthday"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:text="1/1/2020"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_select_date"
+        app:layout_constraintStart_toEndOf="@+id/tv_select_date"
+        app:layout_constraintTop_toTopOf="@+id/tv_select_date" />
+
+    <TextView
+        android:id="@+id/tv_select_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_font"
+        android:gravity="left"
+        android:text="Select Gender :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_select_date" />
+
+    <Spinner
+        android:id="@+id/gender_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_select_gender"
+        app:layout_constraintStart_toEndOf="@+id/tv_select_gender"
+        app:layout_constraintTop_toTopOf="@+id/tv_select_gender" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_btn"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_spinner"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

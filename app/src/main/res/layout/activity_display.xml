@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search.DisplayActivity">
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name of food"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btSearchIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Ingredient"
+        android:textSize="15sp"
+        android:background="@drawable/round_btn"
+        android:foreground=" ?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearch" />
+
+    <Button
+        android:id="@+id/btSearchRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:background="@drawable/round_btn"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:foreground=" ?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/btSearchMyRecord"
+        app:layout_constraintStart_toEndOf="@+id/btSearchIngredient"
+        app:layout_constraintTop_toBottomOf="@+id/etSearch" />
+
+    <Button
+        android:id="@+id/btSearchMyRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="MyRecord"
+        android:textSize="15sp"
+        android:foreground=" ?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:background="@drawable/round_btn"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearch" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/displayResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/btSearchIngredient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:backgroundTint="@color/teal_200"
+        app:tint="#ffffff"
+        app:rippleColor="#4A8E87"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">NUMAD22FA_GROUP10</string>
+
+    <!--Main activity-->
+    <string name="at_your_service">At Your Service</string>
+    <string name="enter_your_zip_code_here">Enter Your ZIP code here</string>
+    <string name="search">Search</string>
+    <string name="please_type_in_your_5_digits_zip_code_to_see_your_7_day_weather_forecast">Please type in your 5 digits ZIP code to see your 7 day weather forecast</string>
+    <string name="date">Date</string>
+    <string name="temp_max">Temp_max</string>
+    <string name="temp_min">Temp_min</string>
+    <string name="weatherDesc">weatherDesc</string>
+    <string name="group_10">Group 10</string>
+    <string name="chattingActivity">Chatting Activity</string>
+    <string name="user_email">User Email</string>
+    <string name="account_login">Account Login</string>
+    <string name="login">LOGIN</string>
+    <string name="username">userName</string>
+    <string name="logout">Logout</string>
+    <string name="channel_name">Notifcation Name</string>s
+    <string name="channel_description">Notification Channel for the group10 app</string>
+    <string name="channel_id">Channel_Name_NUMAD22FA_GROUP10</string>
+<!--    <string name="apiKey">917df9b20deb475dae9f2917ba8076f0</string>-->
+    <string name="apiKey">f9ce3584b52743b78c3d8b4c466f6539</string>
+<!--    <string name="apiKey">1f65ab8c83794bd7beaa39dc76e9d828</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kcal_number">number</string>
+    <string name="emoji">&#128722; Calories Collector</string>
+    <string name="register">Register</string>
+
+
+    <string-array name="array_months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="blank"> </string>
+
+</resources>
